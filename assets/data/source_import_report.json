@@ -1,0 +1,999 @@
+{
+  "sourceFile": "ا ترخيص        الشركات      29   8     2026.xlsx",
+  "sourceSheet": "ورقة1",
+  "sourceRowsWithAllFields": 2011,
+  "importedUniqueCars": 1909,
+  "companies": 26,
+  "exactDuplicateRowsExcluded": 102,
+  "incompleteRowsExcluded": [
+    {
+      "sourceRow": 709,
+      "carNumber": "",
+      "letters": "ب ى د",
+      "companyName": "السلام"
+    }
+  ],
+  "duplicateRows": [
+    {
+      "sourceRow": 1321,
+      "carNumber": "586",
+      "letters": "ه ق د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1322,
+      "carNumber": "749",
+      "letters": "ه ق د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1323,
+      "carNumber": "584",
+      "letters": "ه ق د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1324,
+      "carNumber": "754",
+      "letters": "ه ق د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1325,
+      "carNumber": "753",
+      "letters": "ه ق د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1326,
+      "carNumber": "751",
+      "letters": "ه ق د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1327,
+      "carNumber": "748",
+      "letters": "ه ق د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1328,
+      "carNumber": "752",
+      "letters": "ه ق د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1329,
+      "carNumber": "746",
+      "letters": "ه ق د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1330,
+      "carNumber": "587",
+      "letters": "ه ق د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1331,
+      "carNumber": "9281",
+      "letters": "ا ج د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1332,
+      "carNumber": "9264",
+      "letters": "ا ج د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1333,
+      "carNumber": "9276",
+      "letters": "ا ج د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1334,
+      "carNumber": "9275",
+      "letters": "ا ج د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1335,
+      "carNumber": "9274",
+      "letters": "ا ج د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1336,
+      "carNumber": "9273",
+      "letters": "ا ج د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1337,
+      "carNumber": "521",
+      "letters": "ه ف د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1338,
+      "carNumber": "9267",
+      "letters": "ا ج د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1339,
+      "carNumber": "9268",
+      "letters": "ا ج د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1340,
+      "carNumber": "9278",
+      "letters": "ا ج د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1341,
+      "carNumber": "9271",
+      "letters": "ا ج د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1342,
+      "carNumber": "9283",
+      "letters": "ا ج د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1343,
+      "carNumber": "9284",
+      "letters": "ا ج د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1344,
+      "carNumber": "9285",
+      "letters": "ا ج د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1345,
+      "carNumber": "984",
+      "letters": "ا ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1346,
+      "carNumber": "123",
+      "letters": "ب ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1347,
+      "carNumber": "987",
+      "letters": "ا ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1348,
+      "carNumber": "986",
+      "letters": "ا ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1349,
+      "carNumber": "124",
+      "letters": "ب ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1350,
+      "carNumber": "134",
+      "letters": "ب ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1351,
+      "carNumber": "135",
+      "letters": "ب ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1352,
+      "carNumber": "136",
+      "letters": "ب ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1353,
+      "carNumber": "125",
+      "letters": "ب ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1354,
+      "carNumber": "126",
+      "letters": "ب ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1355,
+      "carNumber": "127",
+      "letters": "ب ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1356,
+      "carNumber": "129",
+      "letters": "ب ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1357,
+      "carNumber": "128",
+      "letters": "ب ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1358,
+      "carNumber": "132",
+      "letters": "ب ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1359,
+      "carNumber": "981",
+      "letters": "ا ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1360,
+      "carNumber": "978",
+      "letters": "ا ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1361,
+      "carNumber": "974",
+      "letters": "ا ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1362,
+      "carNumber": "985",
+      "letters": "ا ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1363,
+      "carNumber": "983",
+      "letters": "ا ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1364,
+      "carNumber": "975",
+      "letters": "ا ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1365,
+      "carNumber": "976",
+      "letters": "ا ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1366,
+      "carNumber": "982",
+      "letters": "ا ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1367,
+      "carNumber": "137",
+      "letters": "ب ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1368,
+      "carNumber": "138",
+      "letters": "ب ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1369,
+      "carNumber": "4847",
+      "letters": "ا ن د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1370,
+      "carNumber": "7525",
+      "letters": "ا ن د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1371,
+      "carNumber": "7897",
+      "letters": "ا ن د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1372,
+      "carNumber": "586",
+      "letters": "ه ق د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1373,
+      "carNumber": "749",
+      "letters": "ه ق د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1374,
+      "carNumber": "584",
+      "letters": "ه ق د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1375,
+      "carNumber": "754",
+      "letters": "ه ق د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1376,
+      "carNumber": "753",
+      "letters": "ه ق د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1377,
+      "carNumber": "751",
+      "letters": "ه ق د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1378,
+      "carNumber": "748",
+      "letters": "ه ق د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1379,
+      "carNumber": "752",
+      "letters": "ه ق د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1380,
+      "carNumber": "746",
+      "letters": "ه ق د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1381,
+      "carNumber": "587",
+      "letters": "ه ق د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1382,
+      "carNumber": "9281",
+      "letters": "ا ج د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1383,
+      "carNumber": "9264",
+      "letters": "ا ج د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1384,
+      "carNumber": "9276",
+      "letters": "ا ج د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1385,
+      "carNumber": "9275",
+      "letters": "ا ج د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1386,
+      "carNumber": "9274",
+      "letters": "ا ج د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1387,
+      "carNumber": "9273",
+      "letters": "ا ج د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1388,
+      "carNumber": "521",
+      "letters": "ه ف د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1389,
+      "carNumber": "9267",
+      "letters": "ا ج د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1390,
+      "carNumber": "9268",
+      "letters": "ا ج د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1391,
+      "carNumber": "9278",
+      "letters": "ا ج د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1392,
+      "carNumber": "9271",
+      "letters": "ا ج د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1393,
+      "carNumber": "9283",
+      "letters": "ا ج د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1394,
+      "carNumber": "9284",
+      "letters": "ا ج د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1395,
+      "carNumber": "9285",
+      "letters": "ا ج د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1396,
+      "carNumber": "984",
+      "letters": "ا ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1397,
+      "carNumber": "123",
+      "letters": "ب ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1398,
+      "carNumber": "987",
+      "letters": "ا ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1399,
+      "carNumber": "986",
+      "letters": "ا ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1400,
+      "carNumber": "124",
+      "letters": "ب ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1401,
+      "carNumber": "134",
+      "letters": "ب ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1402,
+      "carNumber": "135",
+      "letters": "ب ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1403,
+      "carNumber": "136",
+      "letters": "ب ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1404,
+      "carNumber": "125",
+      "letters": "ب ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1405,
+      "carNumber": "126",
+      "letters": "ب ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1406,
+      "carNumber": "127",
+      "letters": "ب ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1407,
+      "carNumber": "129",
+      "letters": "ب ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1408,
+      "carNumber": "128",
+      "letters": "ب ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1409,
+      "carNumber": "132",
+      "letters": "ب ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1410,
+      "carNumber": "981",
+      "letters": "ا ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1411,
+      "carNumber": "978",
+      "letters": "ا ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1412,
+      "carNumber": "974",
+      "letters": "ا ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1413,
+      "carNumber": "985",
+      "letters": "ا ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1414,
+      "carNumber": "983",
+      "letters": "ا ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1415,
+      "carNumber": "975",
+      "letters": "ا ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1416,
+      "carNumber": "976",
+      "letters": "ا ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1417,
+      "carNumber": "982",
+      "letters": "ا ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1418,
+      "carNumber": "137",
+      "letters": "ب ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1419,
+      "carNumber": "138",
+      "letters": "ب ى د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1420,
+      "carNumber": "4847",
+      "letters": "ا ن د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1421,
+      "carNumber": "7525",
+      "letters": "ا ن د",
+      "companyName": "جيرينز"
+    },
+    {
+      "sourceRow": 1422,
+      "carNumber": "7897",
+      "letters": "ا ن د",
+      "companyName": "جيرينز"
+    }
+  ],
+  "plateConflictsAcrossCompanies": [
+    {
+      "carNumber": "5958",
+      "letters": "ا ن د",
+      "carIds": [
+        "car-5694006adaee52798c9bf64b",
+        "car-e20207e9cc8ed17aecaffc6e"
+      ]
+    },
+    {
+      "carNumber": "7212",
+      "letters": "ا ن د",
+      "carIds": [
+        "car-86825cfab74689187a9a0dd0",
+        "car-64d510b6747fbd3445a47999"
+      ]
+    },
+    {
+      "carNumber": "1753",
+      "letters": "ا و ى",
+      "carIds": [
+        "car-5652a006af405d84664957e9",
+        "car-f9659a9f86a69a89685cc998"
+      ]
+    },
+    {
+      "carNumber": "3481",
+      "letters": "ا و ى",
+      "carIds": [
+        "car-5cadd41a3531a63922a7a4d5",
+        "car-153551f72465607bbde07063"
+      ]
+    }
+  ],
+  "companyCounts": [
+    {
+      "companyId": "co-8f9f6b7e7e79",
+      "companyName": "ارت درايف",
+      "cars": 2
+    },
+    {
+      "companyId": "co-d9cbf319e3d1",
+      "companyName": "الابراهمية",
+      "cars": 182
+    },
+    {
+      "companyId": "co-3f3eb5d4c7de",
+      "companyName": "الالمانية",
+      "cars": 3
+    },
+    {
+      "companyId": "co-8acfab3a08b2",
+      "companyName": "الانجليزية",
+      "cars": 479
+    },
+    {
+      "companyId": "co-76236d8c2241",
+      "companyName": "الانوار",
+      "cars": 77
+    },
+    {
+      "companyId": "co-fa5b859db37d",
+      "companyName": "البريق",
+      "cars": 42
+    },
+    {
+      "companyId": "co-1f3a447e922e",
+      "companyName": "الجزيرة",
+      "cars": 5
+    },
+    {
+      "companyId": "co-f37c77281507",
+      "companyName": "الجمعية التعاونية بالقاهرة",
+      "cars": 30
+    },
+    {
+      "companyId": "co-ab2e7ca46a3c",
+      "companyName": "الرواد",
+      "cars": 106
+    },
+    {
+      "companyId": "co-7cb56720c098",
+      "companyName": "السلام",
+      "cars": 201
+    },
+    {
+      "companyId": "co-d933cda982db",
+      "companyName": "الصقر",
+      "cars": 91
+    },
+    {
+      "companyId": "co-9970632f55af",
+      "companyName": "العربية",
+      "cars": 13
+    },
+    {
+      "companyId": "co-df030aae8775",
+      "companyName": "الفهد",
+      "cars": 10
+    },
+    {
+      "companyId": "co-c96d366edf34",
+      "companyName": "القاهرة اتوبيس مواصلات مصر",
+      "cars": 41
+    },
+    {
+      "companyId": "co-20b2f983ec04",
+      "companyName": "اللوتس",
+      "cars": 167
+    },
+    {
+      "companyId": "co-b650f14ebb66",
+      "companyName": "المصرية",
+      "cars": 544
+    },
+    {
+      "companyId": "co-151b32dbd2da",
+      "companyName": "النسر",
+      "cars": 9
+    },
+    {
+      "companyId": "co-c02d4dadeaf8",
+      "companyName": "ايلاركو",
+      "cars": 210
+    },
+    {
+      "companyId": "co-e53b00b6e8c5",
+      "companyName": "بيروت",
+      "cars": 23
+    },
+    {
+      "companyId": "co-ccdd855e5f8a",
+      "companyName": "جمعية النزهة",
+      "cars": 71
+    },
+    {
+      "companyId": "co-f593805470e2",
+      "companyName": "جولدن رود",
+      "cars": 2
+    },
+    {
+      "companyId": "co-a839dad79c63",
+      "companyName": "جيرينز",
+      "cars": 51
+    },
+    {
+      "companyId": "co-e17d8fea343f",
+      "companyName": "سوت    6    اكتوبر",
+      "cars": 44
+    },
+    {
+      "companyId": "co-aec612effa34",
+      "companyName": "لبنان",
+      "cars": 50
+    },
+    {
+      "companyId": "co-eaedf9086274",
+      "companyName": "نارمر",
+      "cars": 3
+    },
+    {
+      "companyId": "co-a861f4215069",
+      "companyName": "وايت هورس",
+      "cars": 3
+    }
+  ],
+  "legacyComparison": {
+    "sourceFile": "تراخيص السيارات مجمع   مايو 23  ش    5     2026.xls",
+    "companySheets": 16,
+    "note": "Older workbook; kept for review and not merged with the 2026 source."
+  },
+  "primarySourceCompanyCounts": [
+    {
+      "companyId": "co-8f9f6b7e7e79",
+      "companyName": "ارت درايف",
+      "cars": 2
+    },
+    {
+      "companyId": "co-d9cbf319e3d1",
+      "companyName": "الابراهمية",
+      "cars": 155
+    },
+    {
+      "companyId": "co-3f3eb5d4c7de",
+      "companyName": "الالمانية",
+      "cars": 3
+    },
+    {
+      "companyId": "co-8acfab3a08b2",
+      "companyName": "الانجليزية",
+      "cars": 311
+    },
+    {
+      "companyId": "co-76236d8c2241",
+      "companyName": "الانوار",
+      "cars": 77
+    },
+    {
+      "companyId": "co-fa5b859db37d",
+      "companyName": "البريق",
+      "cars": 42
+    },
+    {
+      "companyId": "co-1f3a447e922e",
+      "companyName": "الجزيرة",
+      "cars": 5
+    },
+    {
+      "companyId": "co-f37c77281507",
+      "companyName": "الجمعية التعاونية بالقاهرة",
+      "cars": 30
+    },
+    {
+      "companyId": "co-ab2e7ca46a3c",
+      "companyName": "الرواد",
+      "cars": 106
+    },
+    {
+      "companyId": "co-7cb56720c098",
+      "companyName": "السلام",
+      "cars": 166
+    },
+    {
+      "companyId": "co-d933cda982db",
+      "companyName": "الصقر",
+      "cars": 91
+    },
+    {
+      "companyId": "co-9970632f55af",
+      "companyName": "العربية",
+      "cars": 13
+    },
+    {
+      "companyId": "co-df030aae8775",
+      "companyName": "الفهد",
+      "cars": 10
+    },
+    {
+      "companyId": "co-c96d366edf34",
+      "companyName": "القاهرة اتوبيس مواصلات مصر",
+      "cars": 41
+    },
+    {
+      "companyId": "co-20b2f983ec04",
+      "companyName": "اللوتس",
+      "cars": 157
+    },
+    {
+      "companyId": "co-b650f14ebb66",
+      "companyName": "المصرية",
+      "cars": 318
+    },
+    {
+      "companyId": "co-151b32dbd2da",
+      "companyName": "النسر",
+      "cars": 9
+    },
+    {
+      "companyId": "co-c02d4dadeaf8",
+      "companyName": "ايلاركو",
+      "cars": 160
+    },
+    {
+      "companyId": "co-e53b00b6e8c5",
+      "companyName": "بيروت",
+      "cars": 23
+    },
+    {
+      "companyId": "co-ccdd855e5f8a",
+      "companyName": "جمعية النزهة",
+      "cars": 39
+    },
+    {
+      "companyId": "co-f593805470e2",
+      "companyName": "جولدن رود",
+      "cars": 2
+    },
+    {
+      "companyId": "co-a839dad79c63",
+      "companyName": "جيرينز",
+      "cars": 51
+    },
+    {
+      "companyId": "co-e17d8fea343f",
+      "companyName": "سوت    6    اكتوبر",
+      "cars": 44
+    },
+    {
+      "companyId": "co-aec612effa34",
+      "companyName": "لبنان",
+      "cars": 48
+    },
+    {
+      "companyId": "co-eaedf9086274",
+      "companyName": "نارمر",
+      "cars": 3
+    },
+    {
+      "companyId": "co-a861f4215069",
+      "companyName": "وايت هورس",
+      "cars": 3
+    }
+  ],
+  "additionalSourceMerges": [
+    {
+      "sourceFile": "تراخيص السيارات مجمع   مايو 23  ش    5     2026.xls",
+      "sourceFormat": "legacy xls workbook; company sheets parsed from plate cells",
+      "sourceRowsWithPlateAndCompany": 1854,
+      "uniqueSourceCars": 1854,
+      "alreadyPresentExactMatches": 1304,
+      "newCarsAdded": 550,
+      "duplicateSourceRowsExcluded": 0,
+      "crossCompanyConflictsSkipped": 0,
+      "companyAliasesApplied": {
+        "الانجليزية": "الانجليزية",
+        "الابراهيمية": "الابراهمية",
+        "لبنان": "لبنان",
+        "6اكتوبر": "سوت 6 اكتوبر",
+        "اللوتس": "اللوتس",
+        "المصرية": "المصرية",
+        "السلام": "السلام",
+        "الصقر": "الصقر",
+        "الجمعيه التعاونيه القاهره": "الجمعية التعاونية بالقاهرة",
+        "ج النزهه": "جمعية النزهة",
+        "إيلاركو": "ايلاركو",
+        "الرواد": "الرواد",
+        "الجزيرة": "الجزيرة",
+        "جرينز": "جيرينز",
+        "القاهرة أتوبيس": "القاهرة اتوبيس مواصلات مصر",
+        "العربيه": "العربية"
+      },
+      "companyAdditions": [
+        {
+          "companyName": "الابراهمية",
+          "carsAdded": 27
+        },
+        {
+          "companyName": "الانجليزية",
+          "carsAdded": 168
+        },
+        {
+          "companyName": "السلام",
+          "carsAdded": 35
+        },
+        {
+          "companyName": "اللوتس",
+          "carsAdded": 10
+        },
+        {
+          "companyName": "المصرية",
+          "carsAdded": 226
+        },
+        {
+          "companyName": "ايلاركو",
+          "carsAdded": 50
+        },
+        {
+          "companyName": "جمعية النزهة",
+          "carsAdded": 32
+        },
+        {
+          "companyName": "لبنان",
+          "carsAdded": 2
+        }
+      ]
+    }
+  ],
+  "finalCatalogUniqueCars": 2459,
+  "finalCatalogCompanies": 26
+}

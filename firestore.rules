@@ -1,0 +1,60 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isAdmin() {
+      return request.auth != null
+        && request.auth.token.email is string
+        && request.auth.token.email in [
+          'm01151661324@gmail.com'
+          // Add another email after a comma on the previous line.
+        ];
+    }
+
+    match /companies/{companyId} {
+      allow read: if true;
+      allow create: if isAdmin()
+        && request.resource.data.keys().hasOnly(['name', 'color', 'createdAt', 'updatedAt'])
+        && request.resource.data.name is string
+        && request.resource.data.name.size() > 0
+        && request.resource.data.color is string
+        && request.resource.data.updatedAt is timestamp;
+      allow update: if isAdmin()
+        && request.resource.data.keys().hasOnly(['name', 'color', 'createdAt', 'updatedAt'])
+        && request.resource.data.name is string
+        && request.resource.data.name.size() > 0
+        && request.resource.data.color is string
+        && request.resource.data.createdAt == resource.data.createdAt
+        && request.resource.data.updatedAt is timestamp;
+      allow delete: if isAdmin();
+    }
+
+    match /cars/{carId} {
+      allow read: if true;
+      allow create: if isAdmin()
+        && request.resource.data.keys().hasOnly([
+          'carNumber', 'letters', 'companyId', 'createdAt', 'updatedAt'
+        ])
+        && request.resource.data.carNumber is string
+        && request.resource.data.carNumber.size() > 0
+        && request.resource.data.letters is string
+        && request.resource.data.letters.size() > 0
+        && request.resource.data.companyId is string
+        && request.resource.data.createdAt is timestamp
+        && request.resource.data.updatedAt is timestamp
+        && exists(/databases/$(database)/documents/companies/$(request.resource.data.companyId));
+      allow update: if isAdmin()
+        && request.resource.data.keys().hasOnly([
+          'carNumber', 'letters', 'companyId', 'createdAt', 'updatedAt'
+        ])
+        && request.resource.data.carNumber is string
+        && request.resource.data.carNumber.size() > 0
+        && request.resource.data.letters is string
+        && request.resource.data.letters.size() > 0
+        && request.resource.data.companyId is string
+        && request.resource.data.createdAt == resource.data.createdAt
+        && request.resource.data.updatedAt is timestamp
+        && exists(/databases/$(database)/documents/companies/$(request.resource.data.companyId));
+      allow delete: if isAdmin();
+    }
+  }
+}
