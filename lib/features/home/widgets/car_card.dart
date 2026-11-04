@@ -33,7 +33,7 @@ class CarCard extends StatelessWidget {
                   Text(
                     car.carNumber,
                     style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                      color: const Color(0xFF183238),
+                      color: Theme.of(context).colorScheme.onSurface,
                       fontWeight: FontWeight.w800,
                       letterSpacing: 1.2,
                     ),

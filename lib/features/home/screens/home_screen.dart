@@ -10,7 +10,9 @@ import '../../admin/screens/admin_cars_screen.dart';
 import 'all_cars_tab.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+  const HomeScreen({super.key, required this.onToggleTheme});
+
+  final VoidCallback onToggleTheme;
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
@@ -52,6 +54,17 @@ class _HomeScreenState extends State<HomeScreen> {
                 tooltip: 'دخول الأدمن',
                 onPressed: _openAdmin,
                 icon: const Icon(Icons.admin_panel_settings_outlined),
+              ),
+              IconButton(
+                tooltip: Theme.of(context).brightness == Brightness.dark
+                    ? 'تفعيل الوضع الفاتح'
+                    : 'تفعيل الوضع الداكن',
+                onPressed: widget.onToggleTheme,
+                icon: Icon(
+                  Theme.of(context).brightness == Brightness.dark
+                      ? Icons.light_mode_outlined
+                      : Icons.dark_mode_outlined,
+                ),
               ),
               const SizedBox(width: 4),
             ],
@@ -223,10 +236,12 @@ class _WelcomePanel extends StatelessWidget {
       padding: const EdgeInsets.all(19),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(24),
-        gradient: const LinearGradient(
+        gradient: LinearGradient(
           begin: AlignmentDirectional.topStart,
           end: AlignmentDirectional.bottomEnd,
-          colors: [Color(0xFFE4F0ED), Color(0xFFF4F7F3)],
+          colors: Theme.of(context).brightness == Brightness.dark
+              ? const [Color(0xFF203B3A), Color(0xFF263231)]
+              : const [Color(0xFFE4F0ED), Color(0xFFF4F7F3)],
         ),
       ),
       child: Row(
@@ -253,8 +268,9 @@ class _WelcomePanel extends StatelessWidget {
                 const SizedBox(height: 4),
                 Text(
                   '$totalCars سيارة مسجلة لدى الشركات',
-                  style: Theme.of(context).textTheme.bodyMedium
-                      ?.copyWith(color: const Color(0xFF52716D)),
+                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                    color: Theme.of(context).colorScheme.onSurfaceVariant,
+                  ),
                 ),
               ],
             ),
@@ -306,7 +322,10 @@ class _SyncStatus extends StatelessWidget {
         if (catalog.lastSyncAt != null)
           Text(
             'آخر مزامنة ${TimeOfDay.fromDateTime(catalog.lastSyncAt!).format(context)}',
-            style: const TextStyle(fontSize: 11, color: Colors.black54),
+            style: TextStyle(
+              fontSize: 11,
+              color: Theme.of(context).colorScheme.onSurfaceVariant,
+            ),
           ),
       ],
     );
@@ -334,10 +353,12 @@ class _EmptyResults extends StatelessWidget {
             style: TextStyle(fontWeight: FontWeight.w700, fontSize: 17),
           ),
           const SizedBox(height: 5),
-          const Text(
+          Text(
             'جرّب رقمًا أو حروفًا أو اسم شركة مختلفًا',
             textAlign: TextAlign.center,
-            style: TextStyle(color: Colors.black54),
+            style: TextStyle(
+              color: Theme.of(context).colorScheme.onSurfaceVariant,
+            ),
           ),
         ],
       ),

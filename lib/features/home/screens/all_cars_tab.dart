@@ -59,7 +59,9 @@ class _AllCarsTabState extends State<AllCarsTab> {
                   const SizedBox(height: 3),
                   Text(
                     '${cars.length} سيارة',
-                    style: const TextStyle(color: Colors.black54),
+                    style: TextStyle(
+                      color: Theme.of(context).colorScheme.onSurfaceVariant,
+                    ),
                   ),
                   const SizedBox(height: 12),
                   TextField(

@@ -10,15 +10,30 @@ import '../features/home/controllers/car_catalog_controller.dart';
 import '../features/home/screens/home_screen.dart';
 import 'app_theme.dart';
 
-class CarsApp extends StatelessWidget {
+class CarsApp extends StatefulWidget {
   const CarsApp({super.key, required this.repository});
 
   final CarsRepository repository;
 
   @override
+  State<CarsApp> createState() => _CarsAppState();
+}
+
+class _CarsAppState extends State<CarsApp> {
+  ThemeMode _themeMode = ThemeMode.light;
+
+  void _toggleTheme() {
+    setState(() {
+      _themeMode = _themeMode == ThemeMode.light
+          ? ThemeMode.dark
+          : ThemeMode.light;
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-      create: (_) => CarCatalogController(repository),
+      create: (_) => CarCatalogController(widget.repository),
       child: MaterialApp(
         title: AppConstants.appName,
         debugShowCheckedModeBanner: false,
@@ -26,14 +41,18 @@ class CarsApp extends StatelessWidget {
         supportedLocales: const [Locale('ar'), Locale('en')],
         localizationsDelegates: GlobalMaterialLocalizations.delegates,
         theme: buildAppTheme(),
-        home: const _SplashGate(),
+        darkTheme: buildAppTheme(brightness: Brightness.dark),
+        themeMode: _themeMode,
+        home: _SplashGate(onToggleTheme: _toggleTheme),
       ),
     );
   }
 }
 
 class _SplashGate extends StatefulWidget {
-  const _SplashGate();
+  const _SplashGate({required this.onToggleTheme});
+
+  final VoidCallback onToggleTheme;
 
   @override
   State<_SplashGate> createState() => _SplashGateState();
@@ -59,9 +78,9 @@ class _SplashGateState extends State<_SplashGate> {
 
   @override
   Widget build(BuildContext context) {
-    if (_finished) return const HomeScreen();
+    if (_finished) return HomeScreen(onToggleTheme: widget.onToggleTheme);
     return Scaffold(
-      backgroundColor: const Color(0xFFF5F7F6),
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       body: Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,

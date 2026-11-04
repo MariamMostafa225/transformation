@@ -2,37 +2,45 @@ import 'package:flutter/material.dart';
 
 import '../core/constants/app_constants.dart';
 
-ThemeData buildAppTheme() {
+ThemeData buildAppTheme({Brightness brightness = Brightness.light}) {
+  final isDark = brightness == Brightness.dark;
   final colorScheme = ColorScheme.fromSeed(
     seedColor: AppConstants.primary,
-    surface: Colors.white,
+    brightness: brightness,
   );
   return ThemeData(
     useMaterial3: true,
     colorScheme: colorScheme,
-    scaffoldBackgroundColor: AppConstants.background,
-    appBarTheme: const AppBarTheme(
-      backgroundColor: AppConstants.background,
-      foregroundColor: AppConstants.ink,
+    brightness: brightness,
+    scaffoldBackgroundColor: isDark
+        ? const Color(0xFF111819)
+        : AppConstants.background,
+    appBarTheme: AppBarTheme(
+      backgroundColor: isDark
+          ? const Color(0xFF111819)
+          : AppConstants.background,
+      foregroundColor: colorScheme.onSurface,
       centerTitle: false,
       elevation: 0,
     ),
     cardTheme: CardThemeData(
-      color: Colors.white,
+      color: isDark ? const Color(0xFF202A2B) : Colors.white,
       elevation: 1,
       margin: EdgeInsets.zero,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
     ),
     inputDecorationTheme: InputDecorationTheme(
       filled: true,
-      fillColor: Colors.white,
+      fillColor: isDark ? const Color(0xFF202A2B) : Colors.white,
       border: OutlineInputBorder(
         borderRadius: BorderRadius.circular(16),
         borderSide: BorderSide.none,
       ),
       enabledBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(16),
-        borderSide: const BorderSide(color: Color(0xFFE5ECEA)),
+        borderSide: BorderSide(
+          color: isDark ? const Color(0xFF3A494A) : const Color(0xFFE5ECEA),
+        ),
       ),
       focusedBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(16),

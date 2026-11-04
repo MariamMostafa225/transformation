@@ -12,6 +12,12 @@ import '../models/car.dart';
 import '../models/company.dart';
 import '../remote/firebase_bootstrap.dart';
 
+bool _isCatalogCar(Map<String, dynamic> data, Set<String> companyIds) {
+  final companyId = (data['companyId'] ?? '').toString();
+  final letters = (data['letters'] ?? '').toString();
+  return companyIds.contains(companyId) && !RegExp(r'[-–—/]').hasMatch(letters);
+}
+
 class CatalogSnapshot {
   const CatalogSnapshot({
     required this.cars,
@@ -64,6 +70,7 @@ class CarsRepository {
     final companyNames = {
       for (final company in companies) company.id: company.name,
     };
+    final companyIds = companyNames.keys.toSet();
     final bundledRows = jsonDecode(
       await rootBundle.loadString(AppConstants.carsAsset),
     ) as List<dynamic>;
@@ -87,6 +94,7 @@ class CarsRepository {
         row['id'].toString(): row,
     };
     for (final row in cachedRows ?? const <Map<String, dynamic>>[]) {
+      if (!_isCatalogCar(row, companyIds)) continue;
       rowsById[row['id'].toString()] = row;
     }
     final rows = rowsById.values;
@@ -193,13 +201,15 @@ class CarsRepository {
 
   Stream<CatalogSnapshot> watchCars() {
     if (!canUseFirebase) return const Stream<CatalogSnapshot>.empty();
+    final companyNames = {
+      for (final company in companies) company.id: company.name,
+    };
+    final companyIds = companyNames.keys.toSet();
     return FirebaseFirestore.instance.collection('cars').snapshots().map((
       snapshot,
     ) {
-      final companyNames = {
-        for (final company in companies) company.id: company.name,
-      };
       final cars = snapshot.docs
+          .where((document) => _isCatalogCar(document.data(), companyIds))
           .map((document) {
             final raw = document.data();
             final timestamp = raw['updatedAt'];
